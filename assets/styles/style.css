@@ -4,8 +4,6 @@ html {
 }
 body {
     overflow-x:hidden;
-    width:100vw;
-    height:100vh;
     transition: all 2s;
 }
 *, *::after, *::before {
@@ -46,7 +44,7 @@ body {
 
 header {
     position:relative;
-    width:100%;
+    width:100vw;
     height:100px;
     font-size:1.4rem;
     text-align:center;
@@ -58,7 +56,7 @@ header {
 }
 
 nav {
-    width:100%;
+    width:100vw;
     height:50px;
     background-color: rgba(68, 104, 236, 0.949);
 
@@ -109,7 +107,7 @@ a:hover {
 
 .product-item {
     margin-right:1rem;
-    width:400px;
+    width:150px;
     height:350px;
     display:flex;
     flex-direction: column;
@@ -148,16 +146,17 @@ font-weight:bold;
     cursor:pointer;
 }
 #row-first {
-    width:60%;
+    width:80%;
 }
 #row-second {
-    width:50%;
+    width:70%;
 }
 
 #row-first, #row-second {
     margin:auto;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -215,3 +214,118 @@ textarea {
     font-size:1.2rem;
 }
 
+@media (max-width:1300px ) {
+    nav > ul {
+        width:30%;
+    }
+}
+@media (max-width:1100px) {
+    nav > ul {
+        width:35%;
+    }
+}
+
+@media (max-width:700px) {
+    nav > ul {
+        width:60%;
+    }
+}
+
+@media (max-width:960px) {
+    nav > ul > li > a{
+        font-size:1.3rem;
+    }
+    nav > ul {
+        width:55%;
+    }
+    #row-first {
+        flex-wrap:wrap;
+    }
+    #row-second {
+        flex-wrap:wrap;
+    }
+}
+
+@media (max-width:560px) {
+    .btn-translate{
+        transform: translateX(25px);
+    }
+    
+    .change-theme{
+        width:50px;
+        height:25px;
+    }
+    .theme-btn {
+        width:25px;
+        height:25px;
+    }
+    header {
+        font-size:1rem;
+    }
+
+    nav > ul > li > a {
+        font-size:1rem;
+    }
+
+    #products-container > h2 {
+        font-size:2rem;
+    }
+}
+
+@media (max-width:420px) {
+    .btn-translate{
+        transform: translateX(15px);
+    }
+    .change-theme{
+        width:40px;
+        height:20px;
+    }
+    .theme-btn {
+        width:15px;
+        height:15px;
+    }
+    header {
+        font-size:0.7rem;
+    }
+
+    nav > ul > li > a {
+        font-size:0.8rem;
+    }
+    #products-container > h2 {
+        font-size:1.2rem;
+    }
+
+    .product-title {
+        font-size:0.8rem;
+    }
+
+
+    .btn {
+        font-size:0.8rem;
+    }
+
+}
+
+@media (max-width:414px){
+    
+    nav > ul {
+        width:70%;
+    }
+    .product-item {
+        margin-left:3.5rem;
+    }
+}
+
+@media (max-width:390px) {
+    .btn-translate{
+        transform: translateX(15px);
+    }
+    .change-theme{
+        width:40px;
+        height:20px;
+    }
+    .theme-btn {
+        width:15px;
+        height:15px;
+    }
+}
